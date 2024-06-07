@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>关闭按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,0 L24,0 L24,16 C24,20.418278 20.418278,24 16,24 L0,24 L0,24 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="4月-企业端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="创建AI-选择竖版背景图片-自定义" transform="translate(-1667.000000, -170.000000)">
+            <g id="关闭按钮" transform="translate(1679.000000, 182.000000) scale(1, -1) translate(-1679.000000, -182.000000) translate(1667.000000, 170.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="矩形"></g>
+                <rect id="矩形" fill="#1D64F3" mask="url(#mask-2)" x="0" y="0" width="36" height="36" rx="18"></rect>
+                <path d="M9.12811429,14.3395506 C8.97833559,14.1825154 8.95411685,13.9383389 9.08614024,13.7635769 L9.39483396,13.354953 C9.52136661,13.1874593 9.75806023,13.1453914 9.92535703,13.2626366 L12.5971946,15.1351172 C12.7381319,15.233889 12.9806855,15.2210254 13.1122729,15.1089308 L20.1723882,9.09467192 C20.3310758,8.95949164 20.5796495,8.97101295 20.718739,9.11684102 L20.8926465,9.29917405 C21.0439913,9.45785117 21.0329891,9.70973175 20.874335,9.87607241 L13.2967528,17.8207744 C13.0609943,18.0679549 12.6739163,18.0571401 12.4312264,17.8026923 L9.12811429,14.3395506 Z" id="success" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" transform="translate(15.000000, 13.500000) scale(1, -1) translate(-15.000000, -13.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

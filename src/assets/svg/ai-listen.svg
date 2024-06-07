@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>icon-试听</title>
+    <desc>Created with Sketch.</desc>
+    <g id="4月-企业端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="场景设置-讲解内容" transform="translate(-341.000000, -834.000000)">
+            <g id="icon-试听" transform="translate(341.000000, 834.000000)">
+                <path d="M0,12 C0,5.37279738 5.37279738,0 12,0 C18.6271909,0 23.9999882,5.37279738 23.9999882,12 C23.9999882,18.6271909 18.6271909,23.9999882 12,23.9999882 C5.37279738,23.9999882 0,18.6271909 0,12" id="形状" fill="#5D7092" fill-rule="nonzero"></path>
+                <path d="M9.39759539,6.58239679 C8.62639578,6.15759698 7.99999608,6.52399681 7.99999608,7.40399636 L7.99999608,16.5951919 C7.99999608,17.4687914 8.62559577,17.8423913 9.39759539,17.4167915 L17.8143913,12.7711937 C18.5839909,12.3455939 18.5855909,11.6543943 17.8143913,11.2279945 L9.39759539,6.58239679 Z" id="路径" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

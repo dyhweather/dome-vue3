@@ -23,6 +23,12 @@ export const routes = [
         component: () => import('../views/AboutView.vue')
       },
       {
+        path: '/image',
+        name: 'image',
+        meta: { title: '图片', icon: 'AppstoreOutlined'},
+        component: () => import('../views/image/index.vue')
+      },
+      {
         path: '/technologyManage',
         name: 'technologyManage',
         meta: { title: '工艺管理', icon: 'SettingOutlined'},
@@ -31,14 +37,19 @@ export const routes = [
           {
             path: '/technologyManage/matter',
             name: 'matter',
-            meta: { title: '工艺物料'},
+            meta: { title: '工艺物料', icon: 'BorderLeftOutlined'},
             component: () => import('../views/technologyManage/matter/Index.vue')
           },
         ]
       },
     ]
   },
-  
+  {
+    path: '/visualization',
+    name: 'visualization',
+    meta: { title: '可视化大屏', icon: 'MailOutlined'},
+    component: () => import('../views/visualization/index.vue')
+  }
 ]
 
 const router = createRouter({
