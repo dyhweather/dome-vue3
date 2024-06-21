@@ -1,41 +1,45 @@
 <template>
   <div class="content">
-    <a-breadcrumb :routes="routes[0].children" class="breadcrumb">
-      <template #itemRender="{ route, paths }">
-        {{ route?.meta?.title }}
-        <!-- <span v-if="routes.indexOf(route) === routes.length - 1">
-          {{ route?.meta?.title }}
-        </span> -->
-        <!-- <router-link v-else :to="`${basePath}/${paths.join('/')}`">
-          {{ route?.meta?.title }}
-        </router-link> -->
+    <a-breadcrumb :routes="currentRoute" class="breadcrumb">
+      <template v-for="(item, index) in breadList" :key="index">
+        <a-breadcrumb-item>{{ item.meta.title }}</a-breadcrumb-item>
       </template>
-     <!--  <a-breadcrumb-item>Home</a-breadcrumb-item>
-      <a-breadcrumb-item>List</a-breadcrumb-item>
-      <a-breadcrumb-item>App</a-breadcrumb-item> -->
     </a-breadcrumb>
     <div class="main">
       <RouterView />
     </div>
   </div>
-  
 </template>
 
 <script setup>
-import { routes } from '../../router/index'
+import { watch, ref } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
+const currentRoute = ref([])
+const breadList = ref([])
+
+watch(
+  () => route.path,
+  () => {
+    breadList.value = route.matched.filter((item) => item.meta && item.meta.title)
+  },
+  {
+    immediate: true
+  }
+)
 </script>
 
 <style lang="less" scoped>
-  .content {
-    height: 100%;
-    padding: 20px 30px;
-    .breadcrumb {
-      margin-bottom: 15px;
-    }
-    .main {
-      background-color: #fff;
-      height: calc(100% - 37px);
-    }
+.content {
+  height: 100%;
+  padding: 20px 30px;
+  .breadcrumb {
+    margin-bottom: 15px;
   }
+  .main {
+    background-color: #fff;
+    height: calc(100% - 37px);
+  }
+}
 </style>
